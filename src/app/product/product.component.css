@@ -1,69 +1,73 @@
-/* Container de todos os produtos */
 .products-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 32px;
-  justify-content: center;
   padding: 32px 16px;
-  background: linear-gradient(135deg, #e3f0ff 0%, #f5f7fa 100%);
+  background: #eaf3fb;
+  justify-items: center;
   box-sizing: border-box;
 }
 
-/* Cada card de produto */
+/* Card fixo com mesma altura para todos */
 .product-container {
   width: 100%;
-  max-width: 320px; /* largura máxima para responsividade */
-  height: auto;
+  max-width: 280px;
+  height: 480px;
   padding: 24px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
+
 
 .product-container:hover {
   transform: scale(1.02);
 }
 
-/* Título do produto */
 .product-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
   text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  line-height: 1.3;
+  display: -webkit-box;
+ 
 }
 
-/* Imagem do produto */
+
+
 .product-image {
   width: 100%;
-  max-width: 200px;
-  height: 200px;
-  margin-bottom: 24px;
-  object-fit: cover;
-  border-radius: 8px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Preço */
+
 .product-price {
   font-size: 1.3rem;
   color: #1976d2;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
-/* Categoria */
 .product-category {
   font-size: 1rem;
   color: #777;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
-/* Link de detalhes */
 .product-link {
   text-decoration: none;
   background: #1976d2;
@@ -77,3 +81,4 @@
 .product-link:hover {
   background: #125ea2;
 }
+
