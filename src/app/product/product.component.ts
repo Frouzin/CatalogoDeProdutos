@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { CatalogoService, Product } from '../catalogo.service';
 import { CommonModule } from '@angular/common';
 import{  HttpClientModule } from '@angular/common/http'; 
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule,RouterModule],
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })

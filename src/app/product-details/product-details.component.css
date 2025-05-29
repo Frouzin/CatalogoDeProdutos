@@ -1,0 +1,83 @@
+/* Container centralizado e cor de fundo */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f0ff 0%, #f5f7fa 100%);
+}
+
+/* Card do produto */
+.product-details-card {
+  background: #fff;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+/* Layout imagem + preço lado a lado */
+.product-main-info {
+  display: flex;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+/* Imagem */
+.product-image {
+  width: 200px;
+  max-width: 220px;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+
+/* Preço ao lado da imagem */
+.product-price {
+  font-size: 1.5rem;
+  color: #1976d2;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+/* Título */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Categoria */
+.product-category {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Descrição */
+.product-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.back-btn {
+  background: #eee;
+  color: #1976d2;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #dbeafe;
+}
