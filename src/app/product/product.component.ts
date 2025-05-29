@@ -13,17 +13,20 @@ import { RouterModule } from '@angular/router';
 export class ProductComponent implements OnInit {
 
   products: Product[] = [];
+  loading: boolean = true;
 
   constructor(private catalogoService:CatalogoService) { }
 
   ngOnInit() {
-    console.log(this.products);
+    this
     this.catalogoService.getProducts().subscribe({
       next: (data) => {
         this.products = data;
+        this.loading = false;
       },
       error: (error) => {
         console.error('Error fetching products:', error);
+        this.loading = false;
       }
     });
     

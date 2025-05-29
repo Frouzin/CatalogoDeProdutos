@@ -10,8 +10,7 @@
 
 /* Card fixo com mesma altura para todos */
 .product-container {
-  width: 100%;
-  max-width: 280px;
+  width: 280px;
   height: 480px;
   padding: 24px;
   background: #fff;
@@ -51,7 +50,7 @@
 
 
 .product-image {
-  width: 100%;
+  width: 200px;
   height: 180px;
   object-fit: contain;
   margin-bottom: 12px;
@@ -88,3 +87,8 @@
   background: #125ea2;
 }
 
+.loader {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 2em 0;
+}
