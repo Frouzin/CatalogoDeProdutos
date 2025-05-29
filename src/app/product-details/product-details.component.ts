@@ -1,14 +1,14 @@
 import { CommonModule,Location } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Product } from '../catalogo.service';
 import { CatalogoService } from '../catalogo.service';
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [CommonModule, HttpClientModule,],
+  imports: [CommonModule, HttpClientModule, RouterLink],
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
